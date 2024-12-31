@@ -15,7 +15,7 @@ function Projects() {
       description:
         "A functional AVL Tree class in C++ with insertion, deletion, rebalancing, and height tracking optimized for logarithmic operations.",
       imageUrl: "./src/assets/avltree.webp", // Placeholder image
-      link: "https://github.com/AlexanderPotiagalov/avl-tree", // Replace with actual link
+      link: "https://github.com/AlexanderPotiagalov/CS-projects/tree/400714287741c51c4944a724fc3dc0101a844172/AVL%20Tree%20Implementation", // Replace with actual link
       bgColor: "linear-gradient(135deg, #3498db, #2ecc71)", // Techy blue-green background
     },
     {
@@ -23,7 +23,7 @@ function Projects() {
       description:
         "A C-based Mastermind game that provides feedback on guesses, featuring memory-efficient design validated by Valgrind.",
       imageUrl: "./src/assets/mastermind-img.webp", // Placeholder image
-      link: "https://github.com/AlexanderPotiagalov/mastermind-game", // Replace with actual link
+      link: "https://github.com/AlexanderPotiagalov/CS-projects/blob/57b1fbe88f4fe749526005f63269fa247ed6b803/Mastermind.c", // Replace with actual link
       bgColor: "linear-gradient(135deg, #8e44ad, #16a085)", // Purple-green background for mystery and strategy
     },
     {
@@ -31,7 +31,7 @@ function Projects() {
       description:
         "A Python-based tool using Pandas to analyze trends and retrieve performance insights for artists and songs.",
       imageUrl: "./src/assets/billbordtop100-img.webp", // Placeholder image
-      link: "https://github.com/AlexanderPotiagalov/billboard-analysis", // Replace with actual link
+      link: "https://github.com/AlexanderPotiagalov/CS-projects/blob/400714287741c51c4944a724fc3dc0101a844172/Billboard_Top_100_Songs_Charts.py", // Replace with actual link
       bgColor: "linear-gradient(135deg, #f39c12, #e74c3c)", // Bright, engaging colors for analysis
     },
   ];

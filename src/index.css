@@ -292,6 +292,37 @@ section {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
+.github-btn {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(
+    135deg,
+    #ff9a9e,
+    #d743ad,
+    #530df7,
+    #0efacb
+  ); /* Cotton candy gradient */
+  background-size: 300% 300%; /* Creates a smooth animated gradient */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  animation: gradientShift 10s ease infinite; /* Smooth gradient animation */
+  border-radius: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  text-align: center;
+  border: 2px white solid;
+}
+
+.github-btn:hover {
+  transform: scale(1.1); /* Slightly enlarges on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
 /* Responsive Styling for Mobile */
 @media (max-width: 768px) {
   .portfolio-container {

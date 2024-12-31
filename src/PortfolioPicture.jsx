@@ -77,6 +77,14 @@ function PortfolioPicture() {
         >
           View My Resume
         </a>
+        <a
+          href="https://github.com/AlexanderPotiagalov"
+          className="btn github-btn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub Account
+        </a>
       </div>
     </div>
   );

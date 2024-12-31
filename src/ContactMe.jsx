@@ -12,33 +12,31 @@ function Contact() {
   const contactInfo = [
     {
       name: "LinkedIn",
-      link: "https://linkedin.com/in/your-profile",
+      link: "https://www.linkedin.com/in/alexander-potiagalov/",
       icon: <FaLinkedin />,
     },
     {
       name: "Instagram",
-      link: "https://instagram.com/your-profile",
+      link: "https://www.instagram.com/a_lex_pot/?hl=en",
       icon: <FaInstagram />,
     },
     {
       name: "Facebook",
-      link: "https://facebook.com/your-profile",
+      link: "https://www.facebook.com/alexander.potiagalov.7/",
       icon: <FaFacebook />,
     },
     {
       name: "Twitter",
-      link: "https://twitter.com/your-profile",
+      link: "https://x.com/a_lex_pot",
       icon: <FaTwitter />,
     },
     {
       name: "Phone",
-      link: "tel:+1234567890",
       icon: <FaPhone />,
       displayText: "604-352-5948",
     },
     {
       name: "Email",
-      link: "apa168@sfu.ca",
       icon: <FaEnvelope />,
       displayText: "apa168@sfu.ca",
     },
