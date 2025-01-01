@@ -6,6 +6,10 @@ function PortfolioPicture() {
   const [loopIndex, setLoopIndex] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(200);
 
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const images = ["./src/assets/trip2.jpg", "./src/assets/trip3.jpg"];
+
   const texts = [
     "Alex Potiagalov",
     "A Software Developer",
@@ -34,11 +38,19 @@ function PortfolioPicture() {
     return () => clearTimeout(timer);
   }, [currentText, isDeleting, loopIndex, texts, typingSpeed]);
 
+  useEffect(() => {
+    const imageTimer = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(imageTimer);
+  }, []);
+
   return (
     <div className="portfolio-container">
       <div className="portfolio-picture">
         <img
-          src="./src/assets/trip3.jpg"
+          src={images[currentImageIndex]}
           alt="Profile"
           className="profile-image"
         />
