@@ -647,29 +647,6 @@ section {
   font-weight: 600;
 }
 
-@keyframes blurEffect {
-  0% {
-    filter: blur(0);
-    opacity: 1;
-  }
-  25% {
-    filter: blur(calc(var(--blur-max) * 0.5));
-    opacity: 0.75;
-  }
-  50% {
-    filter: blur(var(--blur-max));
-    opacity: 0.5;
-  }
-  75% {
-    filter: blur(var(--blur-max));
-    opacity: 0.25;
-  }
-  100% {
-    filter: blur(var(--blur-max));
-    opacity: 0.1;
-  }
-}
-
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
