@@ -4,7 +4,7 @@ function PortfolioPicture() {
   const [currentText, setCurrentText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopIndex, setLoopIndex] = useState(0);
-  const [typingSpeed, setTypingSpeed] = useState(200); // Typing speed in ms
+  const [typingSpeed, setTypingSpeed] = useState(200);
 
   const texts = [
     "Alex Potiagalov",
@@ -14,7 +14,7 @@ function PortfolioPicture() {
 
   useEffect(() => {
     const handleTyping = () => {
-      const fullText = texts[loopIndex % texts.length]; // Cycle through texts
+      const fullText = texts[loopIndex % texts.length];
       if (isDeleting) {
         setCurrentText((prev) => prev.slice(0, -1));
       } else {
@@ -22,10 +22,10 @@ function PortfolioPicture() {
       }
 
       if (!isDeleting && currentText === fullText) {
-        setTimeout(() => setIsDeleting(true), 1000); // Pause before deleting
+        setTimeout(() => setIsDeleting(true), 1000);
       } else if (isDeleting && currentText === "") {
         setIsDeleting(false);
-        setLoopIndex((prev) => prev + 1); // Move to the next text
+        setLoopIndex((prev) => prev + 1);
       }
     };
 
@@ -38,7 +38,7 @@ function PortfolioPicture() {
     <div className="portfolio-container">
       <div className="portfolio-picture">
         <img
-          src="./src/assets/reactwebpfp.webp"
+          src="./src/assets/trip3.jpg"
           alt="Profile"
           className="profile-image"
         />
