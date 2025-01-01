@@ -1,12 +1,7 @@
 /* Root styles */
 :root {
   font-family: "Roboto", sans-serif;
-  --primary-color: rgba(
-    30,
-    39,
-    46,
-    0.8
-  ); /* Semi-transparent for a sleek effect */
+  --primary-color: rgba(30, 39, 46, 0.8);
   --highlight-gradient: linear-gradient(
     135deg,
     #ff9a9e,
@@ -18,7 +13,7 @@
   --text-color: #ffffff;
   --hover-scale: 1.2;
   --transition-speed: 0.3s;
-  --nav-height: 100px; /* Dynamic height for the fixed navigation bar */
+  --nav-height: 100px;
 }
 
 html {
@@ -34,9 +29,7 @@ body {
 }
 
 section {
-  scroll-margin-top: var(
-    --nav-height
-  ); /* Automatically accounts for the navigation bar's height */
+  scroll-margin-top: var(--nav-height);
 }
 
 /* Navigation bar */
@@ -46,18 +39,18 @@ section {
   width: 100%;
   height: 70px;
   background-color: var(--primary-color);
-  backdrop-filter: blur(10px); /* Glass effect */
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Add depth */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   transition: background-color 0.5s ease, height var(--transition-speed);
 }
 
 .navigation:hover {
-  background-color: rgba(30, 39, 46, 0.9); /* Slightly darker on hover */
+  background-color: rgba(30, 39, 46, 0.9);
 }
 
 .navigation ul {
@@ -82,13 +75,13 @@ section {
 
 .navigation ul li:hover {
   background: var(--highlight-gradient);
-  transform: scale(1.05); /* Enlarges item */
+  transform: scale(1.05);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   color: var(--text-color);
 }
 
 .navigation ul li:active {
-  transform: scale(1.1); /* Slight bounce effect when clicked */
+  transform: scale(1.1);
 }
 
 .navigation ul li a {
@@ -115,7 +108,7 @@ section {
 }
 
 .navigation ul li:hover .icon {
-  transform: rotate(360deg); /* Adds a spinning effect to the icon */
+  transform: rotate(360deg);
 }
 
 /* Mobile responsiveness */
@@ -176,7 +169,7 @@ section {
 .footer {
   background-color: #1e272e;
   border: 2px white solid;
-  color: #ffffff; /* White text */
+  color: #ffffff;
   padding-left: 10px;
   width: 100%;
   height: 30px;
@@ -187,27 +180,27 @@ section {
   text-align: center;
 }
 
-/* Profile Stuff */
+/* Profile Content */
 .portfolio-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 70px; /* Space between the image and description */
+  gap: 70px;
   padding: 30px 20px;
   background-color: #1e272e;
   border: 2px white solid;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 1200px;
   margin: 20px auto;
   border-radius: 10px;
   margin-top: 100px;
-  flex-wrap: wrap; /* Ensure it wraps for smaller screens */
+  flex-wrap: wrap;
 }
 
 .portfolio-picture {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center image for smaller screens */
+  align-items: center;
   justify-content: center;
   padding: 20px;
   background-color: #1e272e;
@@ -223,7 +216,7 @@ section {
   justify-content: center;
   max-width: 1200px;
   margin: 20px auto;
-  text-shadow: 7px 7px 5px rgba(130, 123, 123, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 7px 7px 5px rgba(130, 123, 123, 0.5);
   border-right: 2px solid #fff;
   white-space: nowrap;
   display: inline-block;
@@ -240,25 +233,25 @@ section {
 }
 
 .profile-image {
-  width: 300px; /* Set a fixed width */
-  height: 300px; /* Set a fixed height */
-  object-fit: cover; /* Crop image if needed */
-  border-radius: 50%; /* Makes the image circular */
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
   border: 3px white solid;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Glow effect */
-  transition: transform 0.3s ease; /* Add a hover effect */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
   animation: glow 10s linear infinite;
 }
 
 .profile-image:hover {
-  transform: scale(1.1); /* Slightly enlarges on hover */
+  transform: scale(1.1);
 }
 
 .portfolio-description {
-  max-width: 700px; /* Limit width of the text block */
-  color: #ffffff; /* Text color */
-  font-size: 1rem; /* Font size for the description */
-  line-height: 1.5; /* Line height for better readability */
+  max-width: 700px;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* Resume Button */
@@ -269,27 +262,21 @@ section {
   font-size: 1rem;
   color: #fff;
   text-decoration: none;
-  background: linear-gradient(
-    135deg,
-    #ff9a9e,
-    #d743ad,
-    #530df7,
-    #0efacb
-  ); /* Cotton candy gradient */
-  background-size: 300% 300%; /* Creates a smooth animated gradient */
+  background: linear-gradient(135deg, #ff9a9e, #d743ad, #530df7, #0efacb);
+  background-size: 300% 300%;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  animation: gradientShift 10s ease infinite; /* Smooth gradient animation */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: gradientShift 10s ease infinite;
   border-radius: 25px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   border: 2px white solid;
 }
 
 .resume-button:hover {
-  transform: scale(1.1); /* Slightly enlarges on hover */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .github-btn {
@@ -300,61 +287,55 @@ section {
   font-size: 1rem;
   color: #fff;
   text-decoration: none;
-  background: linear-gradient(
-    135deg,
-    #cd2d62,
-    #f7ff0db7,
-    #054d2a,
-    #fa0ef2
-  ); /* Cotton candy gradient */
-  background-size: 300% 300%; /* Creates a smooth animated gradient */
+  background: linear-gradient(135deg, #cd2d62, #f7ff0db7, #054d2a, #fa0ef2);
+  background-size: 300% 300%;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-  animation: gradientShift 10s ease infinite; /* Smooth gradient animation */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: gradientShift 10s ease infinite;
   border-radius: 25px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
   border: 2px white solid;
 }
 
 .github-btn:hover {
-  transform: scale(1.1); /* Slightly enlarges on hover */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsive Styling for Mobile */
 @media (max-width: 768px) {
   .portfolio-container {
-    flex-direction: column; /* Stack image and description vertically */
-    padding: 20px; /* Reduce padding for smaller screens */
-    gap: 20px; /* Smaller gap */
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
   }
 
   .portfolio-picture {
-    align-items: center; /* Center-align image */
-    padding: 10px; /* Reduce padding */
+    align-items: center;
+    padding: 10px;
   }
 
   .profile-image {
-    width: 300px; /* Smaller image size */
+    width: 300px;
     height: 300px;
   }
 
   .portfolio-description {
-    font-size: 1rem; /* Adjust font size */
-    max-width: 100%; /* Ensure text fits the screen */
-    text-align: center; /* Center text for mobile */
+    font-size: 1rem;
+    max-width: 100%;
+    text-align: center;
   }
 
   .portfolio-heading {
-    font-size: 2.5rem; /* Adjust heading size */
-    text-align: center; /* Center-align heading */
+    font-size: 2.5rem;
+    text-align: center;
   }
 
   .resume-button {
-    font-size: 1rem; /* Adjust button font size */
-    padding: 8px 16px; /* Reduce padding */
+    font-size: 1rem;
+    padding: 8px 16px;
   }
 }
 
@@ -364,7 +345,7 @@ section {
   background-color: #1e272e;
   border: 2px white solid;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 1200px;
   margin: 20px auto;
 }
@@ -375,7 +356,7 @@ section {
   color: #ffffff;
   text-align: center;
   margin-bottom: 20px;
-  text-shadow: 7px 7px 5px rgba(130, 123, 123, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 7px 7px 5px rgba(130, 123, 123, 0.5);
 }
 
 .experience-cards {
@@ -387,27 +368,27 @@ section {
 
 /* Flip Card */
 .flip-card {
-  perspective: 1000px; /* Enable 3D flip effect */
+  perspective: 1000px;
 }
 
 .flip-card-inner {
   position: relative;
   width: 100%;
   height: 350px;
-  transform-style: preserve-3d; /* Ensure smooth flipping */
-  transition: transform 0.6s ease-in-out; /* Smooth and clean transition */
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
   border-radius: 10px;
 }
 
 .flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg); /* Flip on hover */
+  transform: rotateY(180deg);
 }
 
 .front-icon-img {
-  width: 60px; /* Adjust size as needed */
+  width: 60px;
   height: auto;
   margin-bottom: 10px;
-  border-radius: 8px; /* Add rounded corners if desired */
+  border-radius: 8px;
 }
 
 /* Front and Back Sides */
@@ -416,13 +397,13 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; /* Hide the back side when not visible */
+  backface-visibility: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  box-shadow: inset 0 0 0 2px white; /* Clean outline */
+  box-shadow: inset 0 0 0 2px white;
   text-align: center;
   color: #fff;
 }
@@ -434,10 +415,9 @@ section {
 
 /* Back Side */
 .flip-card-back {
-  transform: rotateY(180deg); /* Back is rotated */
+  transform: rotateY(180deg);
 }
 
-/* Content Styling */
 .experience-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
@@ -450,12 +430,11 @@ section {
   font-size: 1rem;
 }
 
-/* Back Card Description Bullets */
 .flip-card-back ul {
   list-style: disc;
   padding: 10px 20px;
-  text-align: left; /* Align bullets to the left */
-  margin: 0; /* Reset margin for consistent spacing */
+  text-align: left;
+  margin: 0;
 }
 
 .flip-card-back li {
@@ -463,7 +442,6 @@ section {
   font-size: 1rem;
 }
 
-/* Front Card Icon Styling */
 .flip-card-front .front-icon {
   font-size: 2.5rem;
   margin-bottom: 10px;
@@ -475,7 +453,7 @@ section {
   background-color: #1e272e;
   border: 2px white solid;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 1200px;
   margin: 20px auto;
 }
@@ -486,7 +464,7 @@ section {
   color: #ffffff;
   text-align: center;
   margin-bottom: 20px;
-  text-shadow: 7px 7px 5px rgba(130, 123, 123, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 7px 7px 5px rgba(130, 123, 123, 0.5);
 }
 
 .projects-container {
@@ -503,7 +481,7 @@ section {
   align-items: left;
   background-color: #ffffff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle card shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
   color: white;
@@ -530,7 +508,7 @@ section {
   font-weight: bold;
   margin-bottom: 10px;
   color: #fcfcfc;
-  text-shadow: 7px 7px 5px rgba(130, 123, 123, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 7px 7px 5px rgba(130, 123, 123, 0.5);
 }
 
 .project-description {
@@ -552,7 +530,7 @@ section {
   text-decoration: none;
   font-weight: bold;
   font-style: normal;
-  background-color: rgba(16, 16, 16, 0.9); /* Initial background color */
+  background-color: rgba(16, 16, 16, 0.9);
   transition: color 0.3s ease, background-color 0.3s ease;
   border: 3px white solid;
 }
@@ -564,10 +542,10 @@ section {
 }
 
 .project-link::before {
-  content: ""; /* Create a pseudo-element for the hover effect */
+  content: "";
   position: absolute;
   top: 0;
-  left: -100%; /* Start animation from outside the element */
+  left: -100%;
   width: 100%;
   height: 100%;
   background: linear-gradient(
@@ -578,12 +556,12 @@ section {
     #d743ad,
     #530df7
   );
-  z-index: -1; /* Ensure it is behind the text */
-  transition: none; /* Prevent unwanted transitions */
+  z-index: -1;
+  transition: none;
 }
 
 .project-link:hover::before {
-  animation: swipe 1.5s linear infinite; /* Swipe animation with faster speed */
+  animation: swipe 1.5s linear infinite;
 }
 
 @keyframes swipe {
@@ -596,13 +574,12 @@ section {
 }
 
 /* Contact Me Page */
-
 .contact-section {
   padding: 20px;
   background-color: #1e272e;
   border: 2px white solid;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   max-width: 1200px;
   margin: 20px auto;
   text-align: center;
@@ -613,14 +590,14 @@ section {
   font-weight: bold;
   margin-bottom: 40px;
   color: #ffffff;
-  text-shadow: 7px 7px 5px rgba(130, 123, 123, 0.5); /* Horizontal offset, vertical offset, blur radius, color */
+  text-shadow: 7px 7px 5px rgba(130, 123, 123, 0.5);
 }
 
 .contact-container {
   display: flex;
   justify-content: center;
   gap: 10px;
-  overflow: hidden; /* Hide any overflow content */
+  overflow: hidden;
   flex-wrap: wrap;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -693,7 +670,6 @@ section {
   }
 }
 
-/* Add gradient animation */
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
@@ -708,19 +684,19 @@ section {
 
 @keyframes glow {
   0% {
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* Red glow */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
   }
   25% {
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.8); /* Green glow */
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
   }
   50% {
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.8); /* Blue glow */
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
   }
   75% {
-    box-shadow: 0 0 10px rgba(255, 255, 0, 0.8); /* Yellow glow */
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
   }
   100% {
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* Back to Red */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
   }
 }
 

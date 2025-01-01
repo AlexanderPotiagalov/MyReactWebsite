@@ -18,7 +18,6 @@ function Header() {
     list.forEach((item) => item.addEventListener("click", activateLink));
 
     return () => {
-      // Cleanup event listeners when the component unmounts
       list.forEach((item) => item.removeEventListener("click", activateLink));
     };
   }, []);
