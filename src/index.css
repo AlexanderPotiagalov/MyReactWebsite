@@ -302,10 +302,10 @@ section {
   text-decoration: none;
   background: linear-gradient(
     135deg,
-    #ff9a9e,
-    #d743ad,
-    #530df7,
-    #0efacb
+    #cd2d62,
+    #f7ff0db7,
+    #054d2a,
+    #fa0ef2
   ); /* Cotton candy gradient */
   background-size: 300% 300%; /* Creates a smooth animated gradient */
   border-radius: 10px;
