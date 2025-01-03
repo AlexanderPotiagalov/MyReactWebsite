@@ -58,29 +58,29 @@ function PortfolioPicture() {
       <div className="portfolio-description">
         <h1 className="portfolio-heading">I'm {currentText}</h1>
         <p>
-          As a Computer Science student at Simon Fraser University, currently
-          pursuing a minor in Business, I’ve always been fascinated by the
-          importance and power of technology and business. Growing up with
-          parents in the tech industry, I developed a deep passion for
-          cybersecurity, software development, and AI early on. Over the years,
-          I’ve developed technical skills in Python, C, C#, C++, JavaScript,
-          HTML, and CSS.
+          I’m a Computer Science student at Simon Fraser University, pursuing a
+          minor in Business. Growing up with parents in the tech industry, I
+          developed an early passion for cybersecurity, software development,
+          and AI. Over time, I’ve improved my problem-solving skills and learned
+          many different languages such as Python, C, C#, C++, JavaScript, HTML,
+          and CSS.
         </p>
         <p>
-          Fluent in English and Russian, with conversational proficiency in
-          French, I thrive in collaborative environments and love solving
-          complex technical challenges. Outside of coding, I enjoy going to the
-          gym, spending quality time with family and friends, fishing, and
-          challenging myself with LeetCode problems. I’m also passionate about
-          learning new languages and frameworks to continually improve my skills
-          and stay ahead in the ever-evolving tech landscape.
+          Beyond coding, I’m fluent in English and Russian, with conversational
+          proficiency in French, and I thrive in diverse environments. I enjoy
+          tackling complex technical challenges, whether it’s through team
+          projects or solving tough LeetCode problems. When I’m not coding,
+          you’ll often find me at the gym, fishing, or spending quality time
+          with family and friends.
         </p>
         <p>
-          Beyond everything, I’m driven by the belief that technology can
-          transform businesses and improve lives. My long-term dream is to
-          combine my love for technology and business to drive impactful
-          innovation in AI and software engineering.
+          I’m passionate about exploring new technologies and frameworks to stay
+          ahead in the ever-evolving tech industry. I firmly believe in the
+          transformative power of technology and business to improve lives. My
+          long-term goal is to drive impactful innovation in AI and software
+          engineering, creating solutions that make a difference.
         </p>
+
         <a
           href="/AlexPotiagalovResume.pdf"
           target="_blank"
